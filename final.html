@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- Ray Martin 12/3/19 -->
+<html lang="en">
+    <head>
+        <title>Web114 Final Project</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="wrapper" class="colors">
+            <header>
+                <h1>Ray Martin's JavaScript Game!</h1>
+            </header>
+            <nav>
+            </nav>
+            <main>
+                <section id="q1">
+                    <h2>1. What is your skill level with JavaScript?</h2>
+                    <ol>
+                        <li><input type="radio" name="skillLevel" id="noob">I'm a clueless noob</li>
+                        <li><input type="radio" name="skillLevel" id="student">I'm a student learning JavaScript</li>
+                        <li><input type="radio" name="skillLevel" id="pro">I'm a JS pro</li>
+                    </ol>
+                    <button id="skillButton">Set Skill Level</button> <P id="experience">Experience level:</P>
+                </section>
+                <section id="q2">
+                    <h2>
+                        2. Let's try some math.
+                    </h2>
+                    <label for="number1">Number 1:</label><input type="number" id="number1" min="0" max="10"><br>
+                    <label for="number2">Number 2:</label><input type="number" id="number2" min="0" max="10"><br>
+                    <select id="operation">
+                        <option value="add">add + </option>
+                        <option value="subtract">subtract - </option>
+                        <option value="multiply">multiply * </option>
+                        <option value="divide">divide / </option>
+                        <option value="remainder">remainder % </option>
+                        <option value="exponent">exponents **</option>
+                    </select>
+                    <button id="calculateButton">Calculate!</button>
+                    <p id="answer">Answer:</p>
+            </section>
+            <section id="q3">
+                <h2>
+                    3. Let's make things more colorful!
+                </h2>
+                <button id="background">Change Section Background</button> <button id="font">Change Font Color</button> 
+                <button id="changeAll">Change Entire Background</button>
+                <p>The current colors cycling through are:</p>
+                <ol id="availColors">
+
+                </ol>
+                <p id="color"></p>
+            </section>
+            <section id="q4">
+                <h2>  
+                    4. True or False - Conditional Operators
+                </h2>
+                    <label for="number3">Is (Number 1)</label><input type="number" id="number3" min="0" max="999"> 
+                    <select id="operator">
+                            <option value="greater">&gt; greater than </option>
+                            <option value="less">&lt; less than</option>
+                            <option value="equal">= equal to</option>
+                            <option value="notEqual">!= not equal to</option>
+                            <option value="greaterEqual">&gt;= greater or equal to</option>
+                            <option value="lessEqual">&lt;= less or equal to</option>
+                        </select>
+                    <label for="number4">(Number 2)</label><input type="number" id="number4" min="0" max="999">?<br>
+                    <button id="compareButton">Compare!</button>
+                    <p id="answer2">
+                        Answer:
+                    </p>
+            </section>
+            <section id="q5">
+                <h2>5. Simple Counter - Click up or down to change the value.</h2>
+                <button id="up">Up</button> <button id="down">Down</button>
+                <p id="counter">0</p>
+            </section>
+            </main>
+        <footer>
+                <p>
+                    <a href="mailto:rmarti98@students.jccc.edu">Ray Martin</a> Web 114 Final Project
+                </p>
+        </footer>
+    </div>
+    <script src="game.js">
+    </script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+/* Ray Martin 12/3/19 */
+
+/* Full Screen width is less than 100% */
+
+#wrapper {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    background-color: #fff;
+}
+
+/* flexible images */ 
+img {
+    max-width: 100%;
+}
+
+h1, footer {
+    padding: .2em;
+}
+
+section {
+    padding: 1em;
+}
+
+#q1, #q3, #q5 {
+    background-color: #ddd;
+}
+
+#q2, #q4 {
+    background-color: #eee;
+}
+
+#color {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Tablet Screen Size */
+@media only screen and (max-width: 64em) {
+    #wrapper { width: 100%; 
+        background-color: #ccc;
+    }
+}
+
+/* Phone Screen Size */
+@media only screen and (max-width: 37.5em) {
+    #wrapper { background-color: #aaa;
+    }
+}
